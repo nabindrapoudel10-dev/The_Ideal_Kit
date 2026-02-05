@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>The Ideal Kit — Cart</title>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="cart.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+   <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="The Ideal Kit Logo">
+      <h1>The Ideal Kit</h1>
+    </div>
+
+    <!-- Back Button -->
+     <a href="home.html" class="back-btn">← Back </a>
+
+    <div class="nav-icons">
+      <a href="home.html" title="Home"><i class="fas fa-home"></i></a>
+      <a href="contact.html" title="Cart"><i class="fas fa-user"></i></a>
+    </div>
+  </header>
+
+  <!-- Cart Page -->
+  <main class="cart-page">
+    <!-- Left: Cart Items -->
+    <section class="cart-left">
+      <h1>Your Cart</h1>
+      <div id="cart-items" class="cart-items"></div>
+    </section>
+
+    <!-- Right: Summary -->
+    <aside class="cart-right">
+      <h2>Order Summary</h2>
+      <div class="summary-line">
+        <span>Subtotal:</span>
+        <span>Rs. <span id="summary-subtotal">0</span></span>
+      </div>
+      <div class="summary-line">
+        <span>Shipping:</span>
+        <span>Rs. <span id="summary-shipping">150</span></span>
+      </div>
+      <div class="summary-line">
+        <span>Discount:</span>
+        <span>- Rs. <span id="summary-discount">0</span></span>
+      </div>
+      <hr />
+      <div class="summary-line total">
+        <span>Total:</span>
+        <strong>Rs. <span id="cart-total">0</span></strong>
+      </div>
+
+      <!-- Buttons -->
+      <button id="checkout-btn" class="checkout">Proceed to Checkout</button>
+      <button id="clear-btn" class="clear">Clear Cart</button>
+    </aside>
+  </main>
+
+  <!-- Payment Methods -->
+<section class="payment-row">
+  <h3>Methods of Payment</h3>
+  <div class="payment-icons">
+    <img src="https://images.seeklogo.com/logo-png/14/2/visa-logo-png_seeklogo-149697.png" alt="Visa" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/MasterCard_Logo.svg/2560px-MasterCard_Logo.svg.png" alt="MasterCard" />
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgr8Sp_swDn2C7Am_ugQXD85dxFqYAmrs-2Q&s" alt="ConnectIPS" />
+    <img src="https://content.sharesansar.com/photos/FEB12/JUly%204/Esewa.jpg" alt="eSewa" />
+    <img src="https://images.seeklogo.com/logo-png/38/3/khalti-digital-wallet-logo-png_seeklogo-380047.png" alt="Khalti" />
+    <img src="https://cdn.gadgetbytenepal.com/wp-content/uploads/2018/02/IME-Pay-Digital-Wallet-Nepal.jpg" alt="IME Pay" />
+    <img src="https://png.pngtree.com/png-clipart/20210523/ourmid/pngtree-cash-on-delivery-pin-point-png-image_3342464.jpg" alt="Cash on Delivery" />
+  </div>
+</section>
+
+ <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 The Ideal Kit | All Rights Reserved</p>
+    <p>Contact: theidealkit@gmail.com | +977-9764503905</p>
+  </footer>
+
+  <script src="cart.js" defer></script>
+</body>
+</html>

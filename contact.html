@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - The Ideal Kit</title>
+  <link rel="stylesheet" href="style-contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="The Ideal Kit Logo">
+      <h1>The Ideal Kit</h1>
+    </div>
+
+    <!-- Back Button -->
+     <a href="home.html" class="back-btn">← Back </a>
+
+    <div class="nav-icons">
+      <a href="home.html" title="Home"><i class="fas fa-home"></i></a>
+      <a href="cart.html" title="Cart"><i class="fas fa-shopping-cart"></i></a>
+    </div>
+  </header>
+
+  <!-- Contact Section -->
+ <section class="contact-container">
+  <h2>Get in Touch</h2>
+  <p>We’re always happy to connect with you! Feel free to reach us through any of the following ways.</p>
+
+  <div class="about-report-container">
+    <!-- Left: About -->
+    <div class="about-section">
+      <div class="about-logo-text">
+        <img src="logo.png" alt="The Ideal Kit Logo" class="about-logo">
+        <div class="about-text">
+          <h3>About The Ideal Kit</h3>
+          <p>
+            <strong>The Ideal Kit</strong> is your one-stop stationery destination where ideas come alive on paper.  
+            We provide premium quality notebooks, pens, art supplies, office materials, and school accessories  
+            that make learning and creativity fun.  
+          </p>
+          <p>
+            Established with the goal of inspiring students and creators, <strong>The Ideal Kit</strong> believes  
+            that every great idea begins with a single pen stroke. Whether you're preparing for exams, sketching,  
+            or journaling — we have the perfect tools for you.  
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Report -->
+    <div class="report-section">
+      <h3>Report an Issue</h3>
+      <p>If you find any problem with our services or website, please let us know below.</p>
+      <textarea placeholder="Describe your issue briefly..."></textarea>
+      <button>Submit Report</button>
+    </div>
+  </div>
+
+  <!-- Contact Cards -->
+  <div class="contact-grid">
+    <div class="contact-card">
+      <i class="fas fa-envelope"></i>
+      <h3>Email Us</h3>
+      <a href="mailto:theidealkit@gmail.com">theidealkit@gmail.com</a>
+    </div>
+    <div class="contact-card">
+      <i class="fas fa-phone"></i>
+      <h3>Call Us</h3>
+      <p>+977-9764503905</p>
+    </div>
+    <div class="contact-card">
+      <i class="fab fa-facebook"></i>
+      <h3>Facebook</h3>
+      <a href="#">facebook.com/theidealkit</a>
+    </div>
+    <div class="contact-card">
+      <i class="fab fa-instagram"></i>
+      <h3>Instagram</h3>
+      <a href="#">@theidealkit</a>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 The Ideal Kit | All Rights Reserved</p>
+    <p>Contact: theidealkit@gmail.com | +977-9766049413</p>
+  </footer>
+
+  <script>
+    const form = document.getElementById('reportForm');
+    const status = document.getElementById('report-status');
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      status.innerText = "✔ Report submitted successfully (demo)";
+      form.reset();
+    });
+  </script>
+
+</body>
+</html>
