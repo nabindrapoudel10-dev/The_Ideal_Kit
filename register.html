@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Create Account</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="register.css">
+    
+</head>
+<body>
+
+    <a href="index.html" class="back-button" title="Back to Login">
+        <i class="fas fa-arrow-left"></i> back
+    </a>
+    
+    <div class="overlay"></div>
+
+    <div class="container">
+        <div class="image-box">
+            <img src="logo.png" class="logo" alt="The Ideal Kit">
+            <h2>The Ideal Kit</h2>
+            <p>Sign up to explore creative and learning tools.</p>
+        </div>
+
+        <div class="login-box">
+            <form id="register-form">
+                <h2>Create Your Account</h2>
+
+                <div class="input-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Min. 8 characters" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" placeholder="Re-enter password" required>
+                </div>
+
+                <div id="message-area" class="message-area"></div>
+
+                <button type="submit" class="btn">Register</button>
+
+                <p class="register-prompt">
+                    Already have an account? <a href="index.html">Back to Login</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <script src="register.js"></script>
+</body>
+</html>
